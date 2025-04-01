@@ -33,6 +33,9 @@ function checkSlice(index) {
   if (index === splitIndex - 1) {
     feedback.textContent = "🥷 Correct Slice!";
     feedback.style.color = "green";
+    setTimeout(() => {
+      location.reload();
+    }, 1500);
   } else {
     feedback.textContent = "❌ Missed it!";
     feedback.style.color = "red";
