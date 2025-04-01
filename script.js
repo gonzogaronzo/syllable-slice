@@ -1,6 +1,7 @@
 
-const word = "NAPKIN";
-const splitIndex = 3; // correct syllable split between P and K
+const wordList = [{'word': 'NAPKIN', 'split': 3}, {'word': 'SUNSET', 'split': 3}, {'word': 'DENTIST', 'split': 3}, {'word': 'CACTUS', 'split': 3}, {'word': 'BATMAN', 'split': 3}, {'word': 'HAPPEN', 'split': 3}, {'word': 'UNLIT', 'split': 3}, {'word': 'INBOX', 'split': 2}, {'word': 'SUBMIT', 'split': 3}, {'word': 'CONTEST', 'split': 3}, {'word': 'PLASTIC', 'split': 4}, {'word': 'INSECT', 'split': 3}, {'word': 'CAMPER', 'split': 3}, {'word': 'SANDAL', 'split': 3}, {'word': 'JACKET', 'split': 3}, {'word': 'TICKET', 'split': 3}, {'word': 'FABRIC', 'split': 3}, {'word': 'HUMBLE', 'split': 3}, {'word': 'PENCIL', 'split': 3}, {'word': 'WINDOW', 'split': 3}];
+
+const { word, split: splitIndex } = wordList[Math.floor(Math.random() * wordList.length)];
 
 const vowels = ['A', 'E', 'I', 'O', 'U'];
 const board = document.getElementById('board');
